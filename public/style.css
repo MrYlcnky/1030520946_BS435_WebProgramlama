@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body, html {
+    background-image:url("sayi1.jpg") !important;
+    width: 100%;
+    height: 100%;
+    background-size:cover ;
+}
+
+.htmlDiv {
+    width: 100%;
+    height: 100%;
+    display: flex; /* yatay veya dikeyde hizalama icin */
+    flex-direction: column; /* yukaridan asagiya hizalama */
+    align-content: center; /* satirlari birbirinden ayirmak icin */
+    align-items: center; /* icindeki elemanlari dikeyde, yani y ekseninde hizalar. */
+}
+
+.htmlDiv2 {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    align-items: center;
+}
