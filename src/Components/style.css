@@ -11,12 +11,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 0;
     border-radius: 20px;
 }
 .playDiv{
-    display: block;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
+
 }
 .playLabel{
     padding: 5px;
@@ -29,3 +36,170 @@
     font-family:"Arial Rounded MT Bold";
 
 }
+
+.max-min-div{
+    display: flex;
+    justify-content: center ;
+    margin-top: 30px;
+    width: 100%;
+}
+.min-input{
+    margin-right: 10px;
+
+}
+.min-max{
+    border: none ;
+    border-radius: 10px;
+    box-shadow: none;
+    height: 40px;
+    font-size: 18px;
+    width: 195px;
+    outline: none;
+    color: #540303AD;
+}
+.tahminet-div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+.tahmin-input{
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 20px;
+}
+.tahmin-btn{
+    margin: 10px 0;
+    margin-top: 3rem;
+    background-color: #6B747CFF;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+}
+.Baslik{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 100px;
+    background-color: #6B747CFF;
+    color: white;
+    font-size: 75px;
+    border-radius: 15px;
+}
+
+.Oyun-Mod{
+    flex-direction: column;
+}
+
+.oyun-ekran-div1{
+    width: 100%;
+
+}
+.kullanıcı-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 4rem;
+    margin-top: 1rem;
+
+}
+.puan-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mod-adi-div{
+    display: flex;
+    justify-content: center !important;
+}
+.puan-h3{
+    margin-right: 4rem;
+}
+
+.girdi-tahmin-div{
+    display: flex;
+    flex-direction: column;
+
+}
+.return-back-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+
+.btn-dive{
+    box-shadow: none;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+}
+.response-text{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.back-btn{
+    background-color: #698dcc;
+    width: 100px;
+}
+.btn-cikis{
+    background-color: red;
+    width: 100px;
+}
+
+.metin-text{
+    color: #d7ec12;
+    font-size: 20px;
+    font-family: "Times New Roman";
+}
+.GirisBaslik{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 100px;
+    background-color: #6B747CFF;
+    color: white;
+    font-size: 40px;
+    border-radius: 15px;
+}
+
+.animason-div{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.su {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #3498db; /* Su rengi */
+    transition: height 1s; /* Geçiş efekti ekleyin */
+    z-index: 1;
+
+}
+
+/*
+.su-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    z-index: 0;
+
+}
+
+
+*/
