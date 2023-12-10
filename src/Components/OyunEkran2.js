@@ -145,4 +145,5 @@ export const OyunEkran2 = (props) => {
     );
 }
 
+
 export default OyunEkran2;
