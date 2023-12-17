@@ -19,8 +19,9 @@ export const OyunEkran1 = (props) => {
     const [tahminDeger, setTahminDeger] = useState(null);
     const [tahminSonuc, setTahminSonuc] = useState("Dikkat Et Sular Yükseliyor!!!")
     const [randomSayi, setRandomSayi] = useState(props.Sayi)
+    const [kullaniciAdi, setKullaniciAdi] = useState(props.kulAdi)
     const geriDonBtn = () => {
-        setBack(true);
+        setBack(true)
     };
     const cikisBtn = () => {
         setExit(true);
@@ -30,15 +31,15 @@ export const OyunEkran1 = (props) => {
         let mevcutYukseklik = 0;
         const timer = setInterval(() => {
             mevcutYukseklik += 38 / 58; // 60 saniyede suyu tamamen doldur 38/60
-                if (mevcutYukseklik <= 37 && sure >= 0) { //37
-                    setSuYukseklik(mevcutYukseklik);
-                } else {
-                    clearInterval(timer);
-                    setPopup(true);
-                }
-                setTimeout(() => {
-                    setSure((sure) => sure - 1);
-                }, 1000);
+            if (mevcutYukseklik <= 37 && sure >= 0) { //37
+                setSuYukseklik(mevcutYukseklik);
+            } else {
+                clearInterval(timer);
+                setPopup(true);
+            }
+            setTimeout(() => {
+                setSure((sure) => sure - 1);
+            }, 1000);
         }, 1000);
         if (yenidenBaslat) {
             setYenidenBaslat(false);
@@ -92,7 +93,7 @@ export const OyunEkran1 = (props) => {
         } else {
             setTahminSonuc("Çok Çok Uzaksın Boğulacaksın!!!");
         }
-        if (fark!==0){
+        if (fark !== 0) {
             setTahminDeger("");
         }
     };
@@ -101,21 +102,23 @@ export const OyunEkran1 = (props) => {
             {exit && <GirisEkran/>}
             {back && (<OyunMod/>)}
             {!exit && !back && (<div>
-                <div>{popup ?
-                    <div>
-                        <div className="overlay"></div>
-                        <div className="popup">
-                            <div className="popup-content">
-                                <h2 className="poph2">{popupyazi}</h2>
-                                <div className="popup-btn-div">
-                                    <button className="btn-dive btn-cikis " onClick={cikisBtn}>Çıkış</button>
-                                    <button className="btn-dive btn-yeniden" onClick={yeniOyunBaslat}>Yeniden Oyna
-                                    </button>
+                <div>
+                    {popup ?
+                        <div>
+                            <div className="overlay"></div>
+                            <div className="popup">
+                                <div className="popup-content">
+                                    <h2 className="poph2">{popupyazi}</h2>
+                                    <div className="popup-btn-div">
+                                        <button className="btn-dive btn-cikis " onClick={cikisBtn}>Çıkış</button>
+                                        <button className="btn-dive btn-yeniden" onClick={yeniOyunBaslat}>Yeniden Oyna
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div> : <div></div>
-                }
+                        : <div></div>
+                    }
                 </div>
                 <div className="playScreen mt-5 Oyun-Mod response-text">
                     <div className="oyun-ekran-div1">
@@ -125,7 +128,7 @@ export const OyunEkran1 = (props) => {
                         </div>
                         <div className="kullanıcı-div metin-text">
 
-                            <h3>Kullanıcı Adınız: {props.kulAdi}</h3>
+                            <h3>Kullanıcı Adınız: {kullaniciAdi}</h3>
                             <div className="puan-div">
                                 <h3 className="puan-h3">Süre:{sure}</h3>
                             </div>
@@ -140,7 +143,8 @@ export const OyunEkran1 = (props) => {
                             <div className="tahminet-div ">
                                 <div className="girdi-tahmin-div">
                                     <input type="number" className="tahmin-input" placeholder="Tahminizi Giriniz!"
-                                           onChange={girilenSayiTahmin}  onKeyPress={handleKeyPress} value={tahminDeger}/>
+                                           onChange={girilenSayiTahmin} onKeyPress={handleKeyPress}
+                                           value={tahminDeger}/>
                                     <button className="tahmin-btn " onClick={sayiTahminn}>TAHMİN ET</button>
                                 </div>
                                 <div className="return-back-div ">

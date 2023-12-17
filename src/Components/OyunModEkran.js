@@ -37,6 +37,7 @@ export const OyunMod = (props) => {
         }
     };
 
+
     return (<div className="response-text">
             {ekranDegisim && (<OyunEkran1 Sayi={randomSayi} kulAdi={props.kuAdi} minSayi={minSayi} maxSayi={maxSayi}/>)}
             {ekranDegisim2 && (<OyunEkran2 Sayi={randomSayi} kulAdi={props.kuAdi} minSayi={minSayi} maxSayi={maxSayi}/>)}

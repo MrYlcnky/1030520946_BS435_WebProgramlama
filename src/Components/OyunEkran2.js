@@ -37,6 +37,7 @@ export const OyunEkran2 = (props) => {
         setTahminSonuc("");
         setpopupyazi("Hakkınız Bitti Karanlıktan Çıkamadınız!!");
         setDenemeHak(5);
+        SetOpacityDeger(1);
         setPopup(false);
         setYenidenBaslat(true);
     };
@@ -92,7 +93,7 @@ export const OyunEkran2 = (props) => {
     return (
         <Container className="position-relative">
             {exit && <GirisEkran/>}
-            {back && (<OyunMod/>)}
+            {back && (<OyunMod kuAdi={props.kulAdi}/>)}
             {!exit && !back && (
                 <div>
                     <div>{popup ?
