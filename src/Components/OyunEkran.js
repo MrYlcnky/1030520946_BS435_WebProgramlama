@@ -124,7 +124,6 @@ export const OyunEkran1 = (props) => {
                     <div className="oyun-ekran-div1">
                         <div className="mod-adi-div">
                             <h1 className="h1yk" style={{color: "white"}}>YÜKSELEN SULAR {randomSayi}</h1>
-
                         </div>
                         <div className="kullanıcı-div metin-text">
 
