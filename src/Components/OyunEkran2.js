@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useRef, useState} from "react";
+import React, { useEffect,useState} from "react";
 import {Container} from "react-bootstrap";
 import {GirisEkran} from "./GirisEkran";
 import OyunMod from "./OyunModEkran";
@@ -118,7 +118,6 @@ export const OyunEkran2 = (props) => {
                             <div className="oyun-ekran-div1">
                                 <div className="mod-adi-div">
                                     <h1 className="h1yk" style={{color: " #d7ec12"}}>Karanlık Aydınlık</h1>
-
                                 </div>
                                 <div className="kullanıcı-div metin-text">
 
