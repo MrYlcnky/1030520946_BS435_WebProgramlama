@@ -137,6 +137,7 @@ export const OyunEkran2 = (props) => {
                                 <div className="return-back-div ">
                                     <button className="btn-dive back-btn" onClick={geriDonBtn}> Geri Dön</button>
                                     <button className="btn-dive btn-cikis " onClick={cikisBtn}>Çıkış</button>
+
                                 </div>
                             </div>
                         </div>
