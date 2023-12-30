@@ -79,7 +79,7 @@ export const OyunEkran1 = (props) => {
             setPopup(true);
             setpopupyazi("TEBRİKLER KAZANDINIZ");
         } else if (fark <= 2) {
-            setTahminSonuc("Bi Gıdım Daha Gel :)");
+            setTahminSonuc("Çok Ama Çok Az Kaldı Hadi Başarabilirsin");
         } else if (fark <= 5) {
             setTahminSonuc("Çok Çok Yakınsın Kurtulacaksın!");
         } else if (fark <= 10) {
@@ -123,7 +123,7 @@ export const OyunEkran1 = (props) => {
                 <div className="playScreen mt-5 Oyun-Mod response-text">
                     <div className="oyun-ekran-div1">
                         <div className="mod-adi-div">
-                            <h1 className="h1yk" style={{color: "white"}}>YÜKSELEN SULAR {randomSayi}</h1>
+                            <h1 className="h1yk" style={{color: "white"}}>YÜKSELEN SULAR </h1>
 
 
                         </div>

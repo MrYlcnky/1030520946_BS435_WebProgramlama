@@ -63,7 +63,7 @@ export const OyunEkran2 = (props) => {
             setPopup(true);
             setpopupyazi("TEBRİKLER KAZANDINIZ");
         } else if(fark <= 2) {
-            setTahminSonuc("Bi Gıdım Daha Gel Güneş Burada:)");
+            setTahminSonuc("Çok Ama Çok Az Kaldı Hadi Başarabilirsin Güneş Burada:)");
             SetOpacityDeger(0.2);
         } else if (fark <= 5) {
             setTahminSonuc("Aydınlığa Çok Kaldı Yakınsın Kurtulacaksın!");
@@ -117,7 +117,7 @@ export const OyunEkran2 = (props) => {
                         <div className=" mod2Arkaplan2" style={{backgroundColor:`rgba(0, 0, 0, ${opacityDeger})`}}>
                             <div className="oyun-ekran-div1">
                                 <div className="mod-adi-div">
-                                    <h1 className="h1yk" style={{color: " #d7ec12"}}>Karanlık Aydınlık{randomSayi}  </h1>
+                                    <h1 className="h1yk" style={{color: " #d7ec12"}}>Karanlık Aydınlık</h1>
                                 </div>
                                 <div className="kullanıcı-div metin-text">
 
